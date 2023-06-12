@@ -1,0 +1,116 @@
+.backImg{
+    background-image: url('./images/pexels-abdullah-ghatasheh-2608353.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+/* founder start */
+.owner{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+  }
+  .owner h1{
+    font-size: 50px;
+    color:#000 ;
+    margin-bottom: 25px;
+    position: relative;
+  }
+  .owner h1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: #f5cb22;
+  
+  }
+  .container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+  }
+  .about{
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    flex-wrap: wrap;
+  }
+   .about-image{
+    flex: 1;
+    margin-right: 40px;
+    /* margin-bottom: 90px; */
+    overflow:hidden;
+  
+  }
+  .about-image img {
+    max-width: 100%;
+    height: auto;
+    
+    display: block;
+    transition: 0.5s ease;
+  
+  }
+  .about-image:hover img{
+    transform: scale(1.2);
+  }
+  .about-content{
+    flex:1;
+  }
+  .about-content h2{
+    margin-bottom: 25px;
+    font-size: 23px;
+    color:#333;
+  }
+  .about-content p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: #666;
+  } 
+   .about-content .read-more{
+    display: inline-block;
+    background-color: #f5cb22;
+    padding: 10px 20px;
+    color:#fff;
+    font-size: 19px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 25px;
+    transition: 0.3 ease;
+  
+  } 
+  .about-content .read-more:hover{
+    background-color: aqua;
+  }
+  @media screen and (max-width:768px){
+    .owner{padding: 0px 20px;
+    }
+    .owner h1{
+      font-size: 36px;
+    }
+    .conatiner{
+      padding: 0px;
+    }
+    .about{
+      padding: 0px;
+      flex-direction:column;
+    }
+    .about-image{
+      margin-left: 0px;
+      margin-bottom: 20px;
+    }
+    .about-content{
+      padding: 0px;
+      font-size: 16px;
+  
+    }
+    .about-content .read-more{
+      font-size: 16px;
+    }
+  }
